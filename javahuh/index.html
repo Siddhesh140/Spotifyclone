@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spotify Clone</h1>
+        <input type="text" id="search" placeholder="Search songs..." oninput="searchSongs()">
+    </header>
+    
+    <main>
+        <div class="song-list" id="song-list">
+            <h2>Available Songs</h2>
+            <div class="song-cards" id="songs">
+                <!-- Song cards will be populated here -->
+            </div>
+        </div>
+        
+        <div class="player">
+            <audio id="audio" controls>
+                <source id="audio-source" src="" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <div class="controls">
+                <button id="play" onclick="playSong()">Play</button>
+                <button id="pause" onclick="pauseSong()">Pause</button>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="1" onchange="changeVolume()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Spotify Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

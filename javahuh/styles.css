@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1db954;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+.song-list {
+    padding: 20px;
+}
+
+.song-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.player {
+    margin: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #181818;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
